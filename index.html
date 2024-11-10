@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TIC TAC TOE</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <header>
+            <button class="btn-back btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                  </svg>
+
+            </button>
+            <h1 class="start-title">TIC TAC TOE</h1>
+            <button class="btn-restart btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                  </svg>
+
+            </button>
+
+      </header>
+
+
+      <main class="">
+            <section class="start">
+                  <div>
+                        <div>
+                              <h2 class="player-title-small">player 1</h2>
+                              <h2 class="player-title-small">player 2</h2>
+                              <input type="text" class="input player-name-1">
+                              <input type="text" class="input player-name-2">
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              class="play-btn">
+                              <path fill-rule="evenodd"
+                                    d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                                    clip-rule="evenodd" />
+                        </svg>
+                  </div>
+            </section>
+
+            <section class="tictactoe hidden">
+                  <div class="player">
+                        <div class="player-box">
+                              <h2 class="player-title player-1">
+                              </h2>
+                              <h3 class="score score-1">0</h3>
+                              <h3 class="message m-1">win</h3>
+                        </div>
+                        <div class="player-box">
+                              <h2 class=" player-title player-2">
+                              </h2>
+                              <h3 class="score score-2">0</h3>
+                              <h3 class="message m-2">win</h3>
+                        </div>
+
+
+
+                  </div>
+                  <div>
+                        <div class="box-container ">
+                              <div class="box"></div>
+                              <div class="box"></div>
+                              <div class="box"></div>
+                              <div class="box"></div>
+                              <div class="box"></div>
+                              <div class="box"></div>
+                              <div class="box"></div>
+                              <div class="box"></div>
+                              <div class="box"></div>
+                        </div>
+                  </div>
+            </section>
+
+      </main>
+
+
+      <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  box-sizing: inherit;
+  background-color: #222;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  background-color: #222;
+}
+
+.btn {
+  height: 3rem;
+  width: 3rem;
+  fill: white;
+  color: white;
+  background-color: #222;
+  border: none;
+  opacity: 0;
+  position: relative;
+  transform: translate(50%, 50%);
+}
+.btn-restart {
+  top: -7rem;
+  left: 85%;
+}
+.btn-back {
+  top: 7rem;
+  left: 5%;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:active {
+  color: #999;
+  transition: 0.2s;
+}
+.start-title {
+  color: white;
+  font-size: 8rem;
+  text-align: center;
+  margin: 2rem auto 0rem;
+}
+
+/* START */
+.start {
+  position: relative;
+  top: 100px;
+  margin: 0rem auto;
+  height: 32rem;
+  background-color: #222;
+  /* background-color: red; */
+}
+
+.start div {
+  display: grid;
+  margin: 0rem auto;
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 10rem;
+  width: fit-content;
+  row-gap: 15rem;
+}
+
+.start div div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 0.5rem;
+  column-gap: 50rem;
+}
+
+input {
+  height: 5rem;
+  width: 30rem;
+  background-color: #444;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  border-radius: 4px;
+  padding: 0rem 1rem;
+  outline: none;
+}
+input:hover {
+  background-color: #111;
+  transition: all 0.5s;
+}
+input:active .player-title {
+  color: white;
+}
+input:focus {
+  border: none;
+  outline: none;
+}
+.player-title-small {
+  color: white;
+}
+
+.play-btn {
+  height: 18rem;
+  width: 18rem;
+  color: white;
+  justify-self: center;
+  align-self: center;
+}
+
+/* TIC TC TOE */
+
+.player {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 40rem;
+}
+.player-box {
+  display: grid;
+  gap: 5rem;
+}
+.score {
+  font-size: 4rem;
+}
+.message {
+  font-size: 6rem;
+  /* padding: 0rem 32rem; */
+  color: green;
+  align-self: end;
+  justify-content: end;
+  text-align: center;
+  opacity: 0;
+}
+.player-title {
+  /* background-color: #fff; */
+  /* color: rgb(116, 115, 118); */
+  width: fit-content;
+  /* height: 5rem; */
+  font-size: 4rem;
+  justify-self: center;
+  text-align: center;
+  /* margin: 10rem; */
+}
+
+.score {
+  color: white;
+  justify-self: center;
+  text-align: center;
+}
+.box-container {
+  width: fit-content;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: -10rem auto;
+  background-color: #999;
+}
+.box {
+  height: 10rem;
+  width: 10rem;
+  background-color: #222;
+}
+.box:hover {
+  background-color: #333;
+  transition: 0.4s;
+}
